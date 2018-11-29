@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <title>MyMoscow_Contacts</title>
+</head>
+<body>
+    <div class="wrapper_0_cont">
+        <div class="black">
+            <div class="sink-menu">
+                <div class="sink-menu-list">
+                    <a href="index.html">Главная</a>
+                    <a href="services.html">Наши услуги</a>
+                    <a href="index.html#tous">О компании</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="index.html#feedb">Отзывы</a>
+                </div>
+            </div>
+            <div class="central-part">
+                <header id="top">
+                    <div>
+                        <a class="header-logo" href="index.html"></a>
+                        <a class="script-logo" href="index.html">My Moscow</a>
+                    </div>
+                    <div class="menu-button">
+                        <div class="menu-button-stick"></div>
+                        <div class="menu-button-stick"></div>
+                        <div class="menu-button-stick"></div>
+                    </div>
+                    <nav>
+                        <a href="index.html">Главная</a>
+                        <a href="services.html">Наши услуги</a>
+                        <a href="index.html#tous">О компании</a>
+                        <a href="contacts.html">Контакты</a>
+                        <a href="index.html#feedb">Отзывы</a>
+                    </nav>
+                </header>
+                <main>
+                    <div class="onslide">
+                        <div class="onslide-text">
+                            <h1>My Moscow</h1>
+                            <h3>Агентство интересных маршрутов</h3>
+                            <h2>-Контакты-</h2>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper_1">
+        <h1>КОНТАКТЫ</h1>
+        <p class="contacts-text">Мы - команда тех, кто любит историю и любит Москву
+        <p class="contacts-text">Москва – это не только место по «заколачиванию денег» и «взращиванию карьеры»,
+            а еще и бесконечно красивые памятники природы, заказники, парки, заповедники.
+            Активный отдых в Москве и Подмосковье – это отличная возможность вырваться из
+            душного мегаполиса куда-нибудь в «дебри», навстречу приключениям. К счастью,
+            не все Подмосковье еще «облагорожено» асфальтными дорожками и высоченными
+            коттеджными заборами. Еще встречаются места, настолько глухие и далекие, что,
+            очутившись там, кажется, что ты – первый человек, ступивший на эту землю. 
+        </p>       
+        <p class="contacts-text">Там, где не проедет автомобилист и даже велосипедист,
+            найдет лазейку и откроет для себя все красоты 100% бездорожья турист,
+            проводящий свой активный отдых в Подмосковье.
+        </p>
+        <div class="contacts-block">
+            <div class="contacts-block-item">
+                <div class="contacts-block-item-man"></div>
+                <div>
+                    <h3>Александр Рыбаков</h3>
+                    <p>Директор</p>
+                    <p>По всем вопросам пишите на почту:<br>
+                       <a href="#" id="mailstyle">ryakov@mymoscow.ru</a>
+                    </p>
+                </div>
+            </div>
+            <div class="contacts-block-item">
+                <div class="contacts-block-item-woman"></div>
+                <div>
+                    <h3>Елена Белкина</h3>
+                    <p>Руководитель корпоративного отдела</p>
+                    <p>По всем вопросам пишите на почту:<br>
+                       <a href="#" id="mailstyle">belkina@mymoscow.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="us">
+            <div class="us-info">
+                <div class="us-info-contacts">
+                    <a class="us-info-contact-map" href="#"></a>
+                    <p class="us-info-contact-script" href="#">Москва,<br> Большая Спасская 12</p>
+                </div>
+                <div class="us-info-contacts">
+                    <a class="us-info-contact-mail" href="#"></a>
+                    <p class="us-info-contact-script" href="#">E-mail:<br>moscow@imoscow.ru</p>
+                </div>
+                <div class="us-info-contacts">
+                    <a class="us-info-contact-phone" href="#"></a>
+                    <p class="us-info-contact-script" href="#">Телефон:<br>8(495)626-46-00</p>
+                </div>
+            </div>
+            <div class="us-info">
+                <div class="us-info-contact-script">Напишите нам</div>
+                <div class="sink-window">
+                    <div class="sink-window-small">
+                        <div class="sink-window-small-content">
+                            <button class="exitbtn"></button>
+                            <h2 id="ajax-receiver">Ваше сообщение успешно отправлено</h2>
+                            <div class="msg"></div>
+                        </div>
+                    </div>
+                </div>
+                <form action="save_message.php" method="POST">
+                <label>
+                    <input id="name" maxlength="16" minlength="4" type="text" name="name" autocomplete="off" required>
+                    <p class="oninput">Имя</p>
+                </label>
+                <label>
+                    <input id="mail" omaxlength="32" minlength="6" type="email" name="mail" autocomplete="off" required>
+                    <p class="oninput">E-mail</p>
+                </label>
+                <label>
+                    <textarea id="text" omaxlength="32" minlength="6" maxlength="800" type="text" name="msg" autocomplete="off" required></textarea>
+                    <p class="oninput" id="ontext">Ваш текст</p>
+                </label>
+                <input type="submit" name="" id="submitbtn-ajax" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="yandex-map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab6b9af875dc22f78bd865dd4c85fd66d9335fdb91fdc2065abcb90088292fa5a&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <footer>
+        <div class="footer-central-part">
+            <div class="footer-block">
+                <div>
+                    <a class="header-logo" href="#main"></a>
+                    <a class="script-logo" href="#main">My Moscow</a>
+                </div>
+                <p class="footer-block-text">Мы приглашаем тебя на самые разные экскурсии по Москве. Автобусные и пешеходные, на целый день или на несколько часов, на свежем воздухе или с заходом в здания - у нас в ассортименте более 20 авторских экскурсий по Москве, выбирай и узнавай Москву вместе с нами!</p>
+            </div>
+            <div class="footer-block">
+                <p class="footer-block-title">Контакты</p>
+                <div class="footer-block-contacts">
+                    <div>
+                        <a class="footer-block-contacts-map" href="#"></a>
+                        <a class="footer-block-contacts-script" href="#">Москва, Большая Спасская 12</a>
+                    </div>
+                    <div>
+                        <a class="footer-block-contacts-mail" href="#"></a>
+                        <a class="footer-block-contacts-script" href="#">moscow@imoscow.ru</a>
+                    </div>
+                    <div>
+                        <a class="footer-block-contacts-phone" href="#"></a>
+                        <a class="footer-block-contacts-script" href="#">8(495)626-46-00</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-block">
+                <p class="footer-block-title">Последние новости</p>
+                <p class="footer-block-text">Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                <p class="footer-block-date">5 марта 2018</p>
+                <p class="footer-block-text">Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                <p class="footer-block-date">12 декабря 2017</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="copyright-central-part">
+            <div>
+            <p>&copy; 2018 Copyright. Все права защищены</p>
+            </div>
+            <div>     
+            <p>Designed by Nordic IT School</p>
+            </div> 
+            <div class="social-link">
+                <a class="fb" href="#"></a> 
+                <a class="vk" href="#"></a>
+                <a class="inst" href="#"></a>
+            </div>     
+        </div>   
+    </div>
+    
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
